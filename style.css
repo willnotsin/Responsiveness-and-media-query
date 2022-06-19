@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: transparent url('bg-intro-desktop.png') no-repeat fixed top left;
+	background-color: hsl(0, 100%, 74%);
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+}
+
+#content {
+	width: 100%;
+	align-items: center;
+	display: inline-flex;
+	height: 100%;
+}
+
+.text {
+	color: #fff;
+	width: 1440px;
+	float: left;
+	/* background-color: grey;  */
+	font-size: 16px;
+	margin-left: 150px;
+	margin-right: 15px;
+	/* margin-top: ; */
+}
+
+.text h1 {
+	/* background-color: cyan; */
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.text p {
+	padding: 10px;
+	/* background-color: blueviolet; */
+}
+
+.wilson {
+	float: right;
+	padding: 20px;
+	/* background-color: aliceblue; */
+	margin-right: 100px;
+	margin-top: 50px;
+}
+
+.top {
+	margin: 30px;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	background: hsl(248, 32%, 49%);
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 16px;
+	box-shadow: 0px 5px 5px hsl(249, 10%, 26%);
+}
+
+fieldset {
+	background-color: #fff;
+	width: 40%;
+	padding: 20px;
+	margin: 30px;
+	height: 530px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 5px 5px hsl(249, 10%, 26%);
+	overflow: hidden;
+}
+tbody {
+	position: relative;
+}
+
+div .icon {
+	position: relative;
+	left: -1em;
+	align-items: center;
+	top: 3.5em;
+	z-index: 1;
+    visibility: hidden;
+}
+form div {
+	text-align: right;
+	position: relative;
+}
+div small{
+    visibility: hidden;
+    color: hsl(0, 100%, 74%);
+    font: inherit;
+}
+.form-control.error input{
+    border-color:hsl(0, 100%, 74%) ;
+
+}
+.form-control.error .icon{
+    visibility: visible;
+}
+.form-control.error small{
+    visibility: visible;
+}
+.form-control.success input{
+    border-color: hsl(154, 59%, 51%);
+}
+div input {
+	position: relative;
+	font: inherit;
+	width: 350px;
+	height: 20px;
+	border: 1px solid hsl(246, 25%, 77%);
+	border-radius: 10px;
+	font-size: 16px;
+	padding: 1em;
+	border-spacing: 15px;
+}
+input:focus {
+	outline: 0;
+	border: 1px solid hsl(249, 74%, 62%);
+}
+
+#submit_btn {
+	color: #fff;
+	background-color: hsl(154, 59%, 51%);
+	padding: 1em;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.5ms;
+	margin-top: 0.5em;
+    border: none;
+}
+
+#submit_btn:hover {
+	background-color: hsl(154, 59%, 61%);
+}
+
+.notice {
+	color: hsl(246, 25%, 77%);
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+#term {
+	color: hsl(0, 100%, 74%);
+	text-decoration: none;
+}
+
+/* find something for making inputs and placeholders bold */
+/*
+ How to add fonts, shadows
+*/
+@media (max-width: 700px) {
+	body {
+		margin-left: -2em;
+		background: transparent url('bg-intro-mobile.png') no-repeat fixed top left;
+		background-color: hsl(0, 100%, 74%);
+		background-position: center;
+		background-size: cover;
+	}
+	.icon {
+		position: relative;
+		left: -2em;
+		align-items: center;
+		top: 4em;
+		font: inherit;
+		z-index: 1;
+	}
+
+	#content {
+		flex-direction: column;
+	}
+
+	.text {
+		text-align: center;
+		width: 375px;
+		margin: 20px;
+		margin-bottom: 5px;
+		/* background-color: aliceblue; */
+	}
+
+	.wilson {
+		width: 375px;
+		align-items: center;
+		margin: 20px;
+		padding: 0;
+		margin-top: 5px;
+	}
+
+	input {
+		width: 230px;
+		margin: 10px;
+		height: 10px;
+		align-items: center;
+	}
+
+	fieldset {
+		height: auto;
+		width: auto;
+		padding: 10px;
+	}
+
+	.top {
+		padding: 30px;
+		width: auto;
+	}
+
+	#submit_btn {
+		width: 93%;
+	}
+}
