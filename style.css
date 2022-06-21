@@ -195,7 +195,7 @@ input:focus {
 	}
 
 	input {
-		width: auto;
+		width: 83%;
 		margin: 10px;
 		height: 10px;
 		align-items: center;
