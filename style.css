@@ -109,7 +109,7 @@ div small{
 .form-control.success input{
     border-color: hsl(154, 59%, 51%);
 }
-div input {
+input {
 	position: relative;
 	font: inherit;
 	width: 350px;
@@ -194,7 +194,7 @@ input:focus {
 		margin-top: 5px;
 	}
 
-	div input {
+	input {
 		width: 83%;
 		margin: 10px;
 		height: 10px;
